@@ -8,8 +8,12 @@
 ************************************************************
 
 </br>
-<h3 align="center">🚨 Hashdump & SharpHound Modules Now Available! 🚨</h3>
-<h4 align="center"><i>❗ Usage of this program under an unauthorized context is strictly forbidden. The author(s) of DeadPotato do not take any responsibility for any harm caused to systems. Use with caution. ❗</i></h4>
+<h3 align="center">🚨 Hashdump & SharpHound 
+</br> 🚨 Modules Now Available! </h3>
+<h4 align="center">
+<i>❗ Usage of this program under an unauthorized context is strictly forbidden.</i> 
+</br>❗ The author(s) of DeadPotato do not take any responsibility for any harm caused to systems.
+</br>❗ Use with caution. </i></h4>
 </br>
 
 ************************************************************
