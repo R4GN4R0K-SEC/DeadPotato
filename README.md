@@ -5,10 +5,15 @@
   <a href="#"><img alt="licenseBDG" src="https://img.shields.io/github/license/lypd0/DeadPotato?style=for-the-badge"></a>
   <a href="#"><img alt="languageBDG" src="https://img.shields.io/badge/LANGUAGE-CSHARP-green?style=for-the-badge"></a>
 
+************************************************************
+
 <h3 align="center">🚨 Hashdump & SharpHound Modules Now Available! 🚨</h3>
 <h4 align="center"><i>❗ Usage of this program under an unauthorized context is strictly forbidden. The author(s) of DeadPotato do not take any responsibility for any harm caused to systems. Use with caution. ❗</i></h4>
 
+************************************************************
+
 ```
+
 C:\Users\lypd0> GodPotato.exe
   
     ⠀⢀⣠⣤⣤⣄⡀⠀    _           _
@@ -43,27 +48,35 @@ _,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,_
    - mimi: Attempts to dump SAM/LSA/SECRETS with Mimikatz. (NOTE: This will write mimikatz to disk!)
    - defender: Either enables or disables Windows Defender's real-time protection.
    - sharphound: Attempts to collect domain data for BloodHound.
+
 ```
+
+************************************************************
 
 <h2 align="center"> ❔ Quick Start - How To Use  ❔ </h2>
 <p><i><strong>The `SeImpersonatePrivilege` right is enabled in your context? With **DeadPotato**, it is possible to achieve maximum privileges on the local system.<br><br>
 The tool will attempt to start an elevated process running in the context of the `NT AUTHORITY\SYSTEM` user by abusing the DCOM's RPCSS flaw in handling OXIDs, allowing unrestricted access over the machine for critical operations to be freely performed.<br><br>
-⚠️ In the following case, the `-cmd` module is used. Many modules are available for use, such as the `-rev IP:PORT` for spawning an elevated reverse shell, `-newadmin usr:pass` for creating a new local Administrator user for persistence, or `-mimi sam` for dumping SAM hashes.</strong></i></p>
-                                                                                    
-![cmd_GQJhLcT9IH](https://github.com/user-attachments/assets/b5f71f4a-f8bc-4099-81c5-54bcece7abb6)
+⚠️ In the following case, the `-cmd` module is used. Many modules are available for use, such as the `-rev IP:PORT` for spawning an elevated reverse shell, `-newadmin usr:pass` for creating a new local Administrator user for persistence, or `-mimi sam` for dumping SAM hashes.</strong></i></p></br>
+
+************************************************************
+
+<image align=*center*> 
+<a href="GQJhLcT9IHA" src=*https://github.com/user-attachments/assets/b5f71f4a-f8bc-4099-81c5-54bcece7abb6* /></a></br>
 
 <h3 align="center"> Verify SeImpersonatePrivilege rights </h3>
 <p><i>In order to use DeadPotato, the SeImpersonatePrivilege right must be enabled in the current context. In order to verify this, the `whoami /priv` command can be executed.</br>
 If there privilege is disabled, exploitation is not possible in the current context.</i></p></br>
 
 ```
-C:\Users\lypd0> whoami /priv
+   C:\Users\lypd0> whoami /priv
 
-<...SNIP...>
-SeImpersonatePrivilege    Impersonate a client after authentication     Enabled
-<...SNIP...>
+    <...SNIP...>
+    SeImpersonatePrivilege    Impersonate a client after authentication     Enabled
+    <...SNIP...>
+
 ```
 
+</br>
 <h2 align="center">🐚 Getting an Elevated Reverse Shell </h2>
 
 ![cmd_XQASCL7Lz6](https://github.com/user-attachments/assets/201fa7cb-4253-47e4-8beb-1ae781fc481c)
@@ -80,7 +93,7 @@ If you like this project, make sure to also go show support to [the original pro
 </strong></p>
 
 <h4 align="center"> License </h4>
-<p><i>This project is licensed under the [Apache 2.0 License](https://choosealicense.com/licenses/apache-2.0)
+<p><i>This project is licensed under the [![Apache 2.0 License](https://choosealicense.com/licenses/apache-2.0)]
 </br> Please review the LICENSE file for more details.</i></p>
 
 [![Star History Chart](https://api.star-history.com/svg?repos=lypd0/DeadPotato&type=Date)](https://star-history.com/#lypd0/DeadPotato&Date)
