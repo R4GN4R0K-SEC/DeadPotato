@@ -1,6 +1,5 @@
-![image](https://github.com/user-attachments/assets/460525cb-1871-4608-a6e5-1c5da07f63aa)
-
 <p align="center">
+  <banner><image href="title-banner" src="https://github.com/user-attachments/assets/460525cb-1871-4608-a6e5-1c5da07f63aa" /></image></banner><br>
   <a href="#"><img alt="forksBDG" src="https://img.shields.io/github/forks/lypd0/DeadPotato?style=for-the-badge"></a>
   <a href="#"><img alt="starsBDG" src="https://img.shields.io/github/stars/lypd0/DeadPotato?style=for-the-badge"></a>
   <a href="#"><img alt="licenseBDG" src="https://img.shields.io/github/license/lypd0/DeadPotato?style=for-the-badge"></a>
@@ -46,16 +45,17 @@ _,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,_
    - sharphound: Attempts to collect domain data for BloodHound.
 ```
 
-## ❔ Quick Start - How To Use
-The `SeImpersonatePrivilege` right is enabled in your context? With **DeadPotato**, it is possible to achieve maximum privileges on the local system.<br><br>
+<h2 align="center"> ❔ Quick Start - How To Use  ❔ </h2>
+<p><i><strong>The `SeImpersonatePrivilege` right is enabled in your context? With **DeadPotato**, it is possible to achieve maximum privileges on the local system.<br><br>
 The tool will attempt to start an elevated process running in the context of the `NT AUTHORITY\SYSTEM` user by abusing the DCOM's RPCSS flaw in handling OXIDs, allowing unrestricted access over the machine for critical operations to be freely performed.<br><br>
-⚠️ In the following case, the `-cmd` module is used. Many modules are available for use, such as the `-rev IP:PORT` for spawning an elevated reverse shell, `-newadmin usr:pass` for creating a new local Administrator user for persistence, or `-mimi sam` for dumping SAM hashes.
-
+⚠️ In the following case, the `-cmd` module is used. Many modules are available for use, such as the `-rev IP:PORT` for spawning an elevated reverse shell, `-newadmin usr:pass` for creating a new local Administrator user for persistence, or `-mimi sam` for dumping SAM hashes.</strong></i></p>
+                                                                                    
 ![cmd_GQJhLcT9IH](https://github.com/user-attachments/assets/b5f71f4a-f8bc-4099-81c5-54bcece7abb6)
 
-#### Verify SeImpersonatePrivilege rights
-In order to use DeadPotato, the SeImpersonatePrivilege right must be enabled in the current context. In order to verify this, the `whoami /priv` command can be executed.
-If there privilege is disabled, exploitation is not possible in the current context.
+<h3 align="center"> Verify SeImpersonatePrivilege rights </h3>
+<p><i>In order to use DeadPotato, the SeImpersonatePrivilege right must be enabled in the current context. In order to verify this, the `whoami /priv` command can be executed.</br>
+If there privilege is disabled, exploitation is not possible in the current context.</i></p></br>
+
 ```
 C:\Users\lypd0> whoami /priv
 
@@ -64,20 +64,24 @@ SeImpersonatePrivilege    Impersonate a client after authentication     Enabled
 <...SNIP...>
 ```
 
+<h2 align="center">🐚 Getting an Elevated Reverse Shell </h2>
 
-## 🐚 Getting an Elevated Reverse Shell
 ![cmd_XQASCL7Lz6](https://github.com/user-attachments/assets/201fa7cb-4253-47e4-8beb-1ae781fc481c)
 
-### 🏅 Credits
-This Project "DeadPotato" is a tool built on the source code of the masterpiece "GodPotato" by BeichenDream.
-If you like this project, make sure to also go show support to [the original project](https://github.com/BeichenDream/GodPotato)
 
-BeichenDream,
-Benjamin DELPY `gentilkiwi`,
-BloodHound Developers.
+<h3 align="center"> 🏅 Credits </h3>
+<p><i>This Project "DeadPotato" is a tool built on the source code of the masterpiece "GodPotato" by BeichenDream.</br>
+If you like this project, make sure to also go show support to [the original project](https://github.com/BeichenDream/GodPotato)</i></br></br>
 
-### License
-This project is licensed under the [Apache 2.0 License](https://choosealicense.com/licenses/apache-2.0/). Please review the LICENSE file for more details.
+<p align="center">
+  <strong></br> BeichenDream, </br>
+  Benjamin DELPY `gentilkiwi`, </br>
+  BloodHound Developers. </br>
+</strong></p>
 
+<h4 align="center"> License </h4>
+<p><i>This project is licensed under the [Apache 2.0 License](https://choosealicense.com/licenses/apache-2.0)
+</br> Please review the LICENSE file for more details.</i></p>
 
 [![Star History Chart](https://api.star-history.com/svg?repos=lypd0/DeadPotato&type=Date)](https://star-history.com/#lypd0/DeadPotato&Date)
+</h4>
